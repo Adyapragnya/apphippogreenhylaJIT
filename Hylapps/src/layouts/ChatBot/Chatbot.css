@@ -1,0 +1,140 @@
+/* General Styling for Search Modal */
+.search-modal-container {
+  width: 450px; /* Increased width */
+  background: rgba(255, 255, 255, 0.2); /* Glass effect */
+  backdrop-filter: blur(10px); /* Blurring the background */
+  border: 1px solid rgba(255, 255, 255, 0.3); /* Subtle border */
+  border-radius: 15px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  max-height: 80vh;
+  z-index: 1200;
+  position: fixed;
+  bottom: 20px; /* Align to bottom */
+  right: 20px; /* Align to right */
+  font-family: 'Poppins', sans-serif; /* Modern font */
+  color: #fff;
+  transition: all 0.4s ease;
+ }
+ 
+ /* Header Styling */
+ .search-header {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.3), rgba(0, 0, 0, 0.2)); /* Subtle gradient */
+  color: #ffffff;
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: bold;
+  font-size: 1.2rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+ }
+ 
+ .search-header .close-button {
+  background: none;
+  border: none;
+  color: #ffffff;
+  font-size: 1.4rem;
+  cursor: pointer;
+  transition: color 0.3s ease, transform 0.3s ease;
+ }
+ 
+ .search-header .close-button:hover {
+  color: #ff5e57;
+  transform: scale(1.1);
+ }
+ 
+ /* Main Content */
+ .search-box {
+  padding: 15px;
+  overflow-y: auto;
+  flex-grow: 1;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #e0e0e0;
+  background: rgba(0, 0, 0, 0.3); /* Subtle background for content */
+  box-shadow: inset 0 3px 8px rgba(255, 255, 255, 0.05);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+ }
+ 
+ /* Input Section */
+ .input-container {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
+  background: rgba(0, 0, 0, 0.4); /* Slightly darker background */
+  border-radius: 0 0 15px 15px;
+ }
+ 
+ .input-container input {
+  flex-grow: 1;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  background: rgba(255, 255, 255, 0.1); /* Glass input effect */
+  color: #000000; /* Black text for visibility */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  outline: none;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+ }
+ 
+ .input-container input::placeholder {
+  color: rgba(255, 255, 255, 0.8); /* Slightly lighter placeholder color */
+ }
+ 
+ .input-container input:focus {
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.8);
+  transform: scale(1.02);
+ }
+ 
+ .input-container button {
+  background: linear-gradient(135deg, #00c6ff, #0072ff); /* Cool gradient button */
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+ }
+ 
+ .input-container button:hover {
+  background: linear-gradient(135deg, #0072ff, #00c6ff);
+  transform: translateY(-2px);
+ }
+ 
+ /* Scrollbar Styling */
+ .search-box::-webkit-scrollbar {
+  width: 6px;
+ }
+ 
+ .search-box::-webkit-scrollbar-track {
+  background-color: rgba(255, 255, 255, 0.1);
+ }
+ 
+ .search-box::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, #00c6ff, #0072ff);
+  border-radius: 5px;
+ }
+ 
+ .search-box::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(135deg, #0072ff, #0056a6);
+ }
+ 
+ /* Responsive Design */
+ @media (max-width: 480px) {
+  .search-modal-container {
+  width: 95%;
+  bottom: 10px;
+  right: 10px;
+  }
+ }
+ 

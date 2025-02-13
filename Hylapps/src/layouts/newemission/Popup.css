@@ -1,0 +1,117 @@
+/* Popup Container */
+.popup-container {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 130px; /* Default width for desktop */
+    /* box-sizing: border-box; */
+     /* Ensure padding doesn't affect width */
+    line-height: 1.2; /* Adjusted line height */
+    transition: all 0.3s ease;
+  
+  }
+  
+  /* Header Section */
+  .popup-header {
+    font-size: 1em; /* Reduced font size */
+    font-weight: bold;
+    /* margin-bottom: 8px; */
+    text-align: center;
+    color: #1bb4cc;
+    border-bottom: 1px solid #ddd; /* Thinner border */
+    /* padding-bottom: 5px;/ */
+  }
+  
+  /* Title Section */
+  .popup-title {
+    font-size: 12px; /* Smaller title font */
+    margin: 0;
+    color: #1b56cc;
+    text-align: left;
+  }
+  
+  .popup-imo {
+    font-size: 10px; /* Smaller IMO font */
+    color: #2e2c2c;
+    margin-left: 4px; /* Reduced margin */
+  }
+  
+  /* Details Section */
+  .popup-details {
+    /* margin: 10px 0;  */
+    /* Reduced margin */
+    font-size: 10px; /* Smaller font size */
+  }
+  
+  .popup-detail {
+    /* margin-bottom: 6px;  */
+    /* Reduced bottom margin */
+    display: flex;
+    align-items: center;
+  }
+  
+  .popup-label {
+    font-weight: 500;
+    color: #666;
+    /* margin-right: 5px;  */
+    /* Reduced margin */
+  }
+  
+  .popup-value {
+    /* font-weight: bold; */
+    color: #000000;
+    text-align: right;
+    font-size: 10px; /* Reduced font size */
+  }
+  
+  .popup-value.time {
+    margin-left: 4px;
+  }
+  
+  /* Footer Section */
+  .popup-footer {
+    /* margin-top: 10px;  */
+    /* Reduced top margin */
+    text-align: right;
+  }
+  
+  /* Link Style */
+  .view-more-link {
+    font-size: 10px; /* Smaller font size */
+  }
+  
+  /* Status Badge */
+  .popup-status {
+    /* padding: 4px 8px; */
+     /* Smaller padding */
+    font-size: px; 
+    /* Smaller font size */
+    border-radius: 3px; /* Adjusted border radius */
+  }
+  
+  /* Button Style */
+  .popup-button {
+    /* padding: 6px 10px;  */
+    /* Reduced padding */
+    font-size: 12px; /* Smaller font size */
+    border-radius: 3px; /* Adjusted border radius */
+  }
+  
+  /* Responsive Styling for Smaller Screens */
+  @media (max-width: 480px) {
+    .popup-container {
+      width: 180px; /* Further reduce width for smaller screens */
+      /* padding: 6px;  */
+      /* Adjust padding */
+    }
+  
+    .popup-title {
+      font-size: 12px; /* Reduced font size */
+    }
+  
+    .popup-details {
+      font-size: 10px; /* Smaller font size */
+    }
+  
+    .popup-value {
+      font-size: 10px; /* Adjusted font size */
+    }
+  }

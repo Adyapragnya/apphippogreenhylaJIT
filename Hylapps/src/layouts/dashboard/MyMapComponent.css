@@ -1,0 +1,125 @@
+.map-timeline-container {
+  display: flex; /* Align items side by side */
+  flex-direction: row; /* Default to row layout */
+  align-items: stretch; /* Ensure both sections stretch to the same height */
+  max-width: 1200px; /* Max width for the container */
+  margin: 20px auto; /* Center the container */
+  gap: 20px; /* Add spacing between sections */
+}
+
+.vessel-info {
+  flex: 0 0 400px; /* Take equal space as the map card */
+  padding: 20px;
+  border: 1px solid #e0e0e0; /* Light border for separation */
+  border-radius: 12px;
+  background-color: #f9f9f9; /* Light background color */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  display: flex; /* Use flexbox for content */
+  flex-direction: column; /* Arrange content vertically */
+}
+
+.vessel-info h4 {
+  margin-bottom: 16px;
+}
+
+.voyage-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.voyage-table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+}
+
+.voyage-table td:first-child {
+  font-weight: bold;
+}
+
+.voyage-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.voyage-table tr {
+  border-bottom: 1px solid #ddd;
+  font-size: 17px !important;
+}
+
+.voyage-table tr:last-child {
+  border-bottom: none;
+}
+
+.map-card {
+  flex: 1; /* Take equal space as the vessel info */
+  background-color: #ffffff; /* Card background color */
+  border-radius: 12px; /* Rounded corners */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Light shadow */
+}
+
+.map-card .leaflet-container {
+  height: 100%; /* Ensure the map container takes full height */
+  border-radius: 12px; /* Rounded corners for the map */
+}
+
+@media (max-width: 768px) {
+  .map-timeline-container {
+    flex-direction: column; /* Stack sections vertically */
+    align-items: stretch; /* Ensure full width */
+  }
+
+  .vessel-info,
+  .map-card {
+    flex: none; /* Disable flex-grow/shrink */
+    width: 100%; /* Full width for mobile */
+    margin-bottom: 20px; /* Add spacing between sections */
+  }
+
+  .map-card {
+    height: 600px; /* Adjust height for mobile screens */
+  }
+}
+
+.timeline {
+  position: relative;
+}
+
+.timeline h4 {
+  margin-bottom: 10px;
+}
+
+.timeline ul {
+  list-style-type: none; /* Remove default list styling */
+  padding: 0;
+}
+
+.timeline li {
+  position: relative;
+  padding-left: 30px; /* Space for timeline dot */
+  margin-bottom: 15px; /* Space between items */
+}
+
+.timeline-dot {
+  position: absolute;
+  left: 0;
+  top: 10px; /* Centered with the text */
+  width: 10px;
+  height: 10px;
+  background-color: #313fff; /* Color for the timeline dot */
+  border-radius: 50%; /* Circular dot */
+}
+
+.timeline-content {
+  font-size: 14px; /* Adjust font size */
+  color: #333; /* Text color */
+}
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,108 @@
+/* Tab container styling */
+.tab-container {
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 0px 0;
+  transition: all 0.3s ease;
+}
+
+/* Tabs styling */
+.tabs {
+  border-bottom: 2px solid #e0e0e0;
+  display: flex;
+  justify-content: flex-start;
+  background-color: #fafafa;
+  padding: 0 20px;
+  height: 50px;
+  align-items: center;
+  transition: all 0.3s ease;
+  overflow-x: auto; /* Ensure scrolling if tabs overflow */
+}
+
+/* Tab styling */
+.tabs .tab {
+  font-size: 14px;
+  font-weight: 600;
+  color: #6c757d;
+  text-transform: capitalize;
+  padding: 10px 20px;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  margin-right: 10px;
+  border-radius: 4px;
+  transition: color 0.3s ease, background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Active (selected) tab styling */
+.tabs .tab.active {
+  color: #007bff;
+  background-color: #e6f4ff;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0, 123, 255, 0.2);
+}
+
+
+
+/* Responsive design for tabs */
+@media (max-width: 1024px) {
+  .tabs {
+    flex-wrap: wrap;
+    padding: 0 10px;
+    justify-content: flex-start;
+  }
+
+  .tabs .tab {
+    font-size: 13px;
+    padding: 8px 16px;
+    margin-right: 8px;
+    margin-bottom: 8px;
+  }
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .tabs {
+    flex-direction: column;
+    padding: 0;
+    height: auto;
+  }
+
+  .tabs .tab {
+    font-size: 12px;
+    padding: 10px 15px;
+    margin-bottom: 5px;
+    width: 100%; /* Ensure tabs take full width */
+  }
+}
+
+/* Very small screens (e.g., mobile phones) */
+@media (max-width: 480px) {
+  .tabs {
+    flex-direction: column;
+    padding: 0;
+    height: auto;
+  }
+
+  .tabs .tab {
+    font-size: 11px;
+    padding: 8px 10px;
+    width: 100%; /* Full width for tabs on small screens */
+  }
+}
+
+/* Tab content transition */
+.table-container > div {
+  position: absolute;
+  width: 100%;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.4s ease;
+}
+
+.table-container > div[style*="display: block"] {
+  opacity: 1;
+  pointer-events: auto;
+}
