@@ -321,7 +321,7 @@ const VoyageTabel: React.FC<VoyageTabelProps> = ({ selectedVessel, selectedPort 
       console.log('aaaaaaaa', row.transport.imoNumber);
       const baseURL = process.env.REACT_APP_API_BASE_URL;
       const response = await fetch(
-        `${baseURL}/api/get-latestAISData-on-submit/${row.transport.imoNumber}}`,
+        `${baseURL}/api/get-latestAISData-on-submit/${row.transport.imoNumber}`,
         {
           method: "GET",
           headers: {
